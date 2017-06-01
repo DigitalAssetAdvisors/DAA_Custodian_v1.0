@@ -1,9 +1,6 @@
 # Custodial Smart Contract: API
 
-This document describes public API of Custodial Smart Contract.
-Copyright © 2017 by ABDK Consulting.
-
-**Author:** Mikhail Vladimirov <mikhail.vladimirov@gmail.com\>
+This document describes the public API of the Custodial Smart Contract.
 
 ## 1. Constructor
 
@@ -158,3 +155,9 @@ Logged with *value* ether was withdrawn from client's capital and sent to client
 
 * Withdraw
 * Withdraw All
+
+
+----
+Copyright © 2017 by ABDK Consulting.
+
+**Author:** Mikhail Vladimirov <mikhail.vladimirov@gmail.com\>
