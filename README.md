@@ -31,7 +31,7 @@ After successful build you may want to run tests via `ant test` command.
 
 
 
-
+---
 **Author:** Mikhail Vladimirov <mikhail.vladimirov@gmail.com>
 
 Copyright © 2017 by ABDK Consulting.
