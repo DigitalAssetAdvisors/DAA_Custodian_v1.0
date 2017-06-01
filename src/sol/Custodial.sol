@@ -1,24 +1,23 @@
 /*
- * Custodial Smart Contract.  Copyright © 2017 by ABDK Consulting.
- * Author: Mikhail Vladimirov <mikhail.vladimirov@gmail.com>
+ * Custodial Smart Contract
  */
 pragma solidity ^0.4.10;
 
 /**
- * Custodial Smart Contract that that charges fee for keeping ether.
+ * Custodial Smart Contract that holds ETH capital on behalf of the client,
+ * and administers a management fee on behalf of the advisor
  */
 contract Custodial {
   uint256 constant TWO_128 = 0x100000000000000000000000000000000; // 2^128
   uint256 constant TWO_127 = 0x80000000000000000000000000000000; // 2^127
 
   /**
-   * Address of the client, i.e. owner of the ether kept by the contract.
+   * Address of the client, i.e. owner of the ether held by the contract.
    */
   address client;
 
   /**
-   * Address of the advisor, i.e. the one who receives fee charged by the
-   * contract for keeping client's ether.
+   * Address of the advisor, i.e. recipient of management fee
    */
   address advisor;
 
@@ -70,7 +69,7 @@ contract Custodial {
   }
 
   /**
-   * Deposit ether on the client's account.
+   * Deposit ether in the client's account.
    */
   function deposit () payable {
     if (msg.value > 0) {
@@ -83,7 +82,7 @@ contract Custodial {
   }
 
   /**
-   * Withdraw ether from client's account and sent it to the client's address.
+   * Withdraw ether from client's account and send to the client's address.
    * May only be called by client.
    *
    * @param _value value to withdraw (in Wei)
@@ -106,7 +105,7 @@ contract Custodial {
   }
 
   /**
-   * Withdraw all ether from client's account and sent it to the client's
+   * Withdraw all ether from client's account and send to the client's
    * address.  May only be called by client.
    *
    * @return true if ether was successfully withdrawn, false otherwise
@@ -126,8 +125,8 @@ contract Custodial {
   }
 
   /**
-   * Withdraw fee charged by the contract as well as all unaccounted ether on
-   * contract's balance and send it to the advisor's address.  May only be
+   * Withdraw fee accrued management fee as well as all unaccounted ether in
+   * contract's balance and send to the advisor's address.  May only be
    * called by advisor.
    *
    * @return true if fee and unaccounted ether was successfully withdrawn,
@@ -144,7 +143,7 @@ contract Custodial {
   }
 
   /**
-   * Terminate account and send all its balance to advisor.  May only be called
+   * Terminate account and send remaining balance to advisor.  May only be called
    * by advisor when capital is zero.
    */
   function terminate () {
@@ -160,7 +159,7 @@ contract Custodial {
   }
 
   /**
-   * Update capital, i.e. charge fee from it.
+   * Update capital, i.e. assess management fee.
    */
   function updateCapital ()
   internal {
@@ -209,7 +208,7 @@ contract Custodial {
   }
 
   /**
-   * Logged when ether was deposited on client's account.
+   * Logged when ether was deposited in client's account.
    *
    * @param from address ether came from
    * @param value amount of ether deposited (in Wei)
@@ -223,3 +222,9 @@ contract Custodial {
    */
   event Withdrawal (uint256 value);
 }
+
+
+/*
+ * Copyright © 2017 by ABDK Consulting
+ * Author: Mikhail Vladimirov <mikhail.vladimirov@gmail.com>
+ */
