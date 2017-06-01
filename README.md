@@ -3,6 +3,10 @@
 This smart contract holds ETH funds on the client's behalf, calculates and  
 administers management fee on advisor's behalf
 
+## Directory ##
+Solidity Source File
+Functional Requirements
+
 
 ## How to Build ##
 
