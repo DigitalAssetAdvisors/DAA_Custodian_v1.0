@@ -4,9 +4,11 @@ This smart contract holds ETH funds on the client's behalf, calculates and
 administers management fee on advisor's behalf
 
 ## Directory ##
-Solidity Source File
-Functional Requirements
+Solidity Source Code: https://github.com/DigitalAssetAdvisors/DAA_Custodian_v1.0/blob/master/src/sol/Custodial.sol
 
+Functional Requirements: https://github.com/DigitalAssetAdvisors/DAA_Custodian_v1.0/blob/master/xdocs/doc/functional-requirements.md
+
+API: https://github.com/DigitalAssetAdvisors/DAA_Custodian_v1.0/blob/master/xdocs/doc/api.md
 
 ## How to Build ##
 
