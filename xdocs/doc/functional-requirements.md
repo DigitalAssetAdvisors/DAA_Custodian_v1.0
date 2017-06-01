@@ -1,6 +1,6 @@
 # Custodial Smart Contract: Functional Requirements
 
-This document describes functional requirements for Custodial Smart Contract.
+This document describes functional requirements for the Custodial Smart Contract.
 
 
 
