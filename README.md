@@ -1,7 +1,7 @@
 # Custodial Smart Contract #
 
-This smart contract holds ETH funds on the client's behalf, calculates and  
-administers management fee on advisor's behalf
+The DAA Custodial smart contract holds ETH funds on the client's behalf.  The smart contract calculates and  
+administers the management fee payable to the advisor. 
 
 ## Directory ##
 Solidity Source Code: https://github.com/DigitalAssetAdvisors/DAA_Custodian_v1.0/blob/master/src/sol/Custodial.sol
