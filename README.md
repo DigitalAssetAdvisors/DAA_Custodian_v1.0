@@ -1,9 +1,10 @@
 # Custodial Smart Contract #
 
-Custodial smart contract that charged fee for keeping ether.
-Copyright © 2017 by ABDK Consulting.
+This smart contract holds ETH funds on the client's behalf, calculates and  
+administers management fee on advisor's behalf
 
 **Author:** Mikhail Vladimirov <mikhail.vladimirov@gmail.com>
+Copyright © 2017 by ABDK Consulting.
 
 ## How to Build ##
 
