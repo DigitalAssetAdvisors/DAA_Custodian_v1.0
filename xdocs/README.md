@@ -3,8 +3,6 @@
 This smart contract holds ETH funds on the client's behalf, calcualates and
 admisiters the management fee on the advisor's behalf. 
 
-**Author:** Mikhail Vladimirov <mikhail.vladimirov@gmail.com>
-Copyright © 2017 by ABDK Consulting.
 
 ## How to Deploy ##
 
@@ -54,3 +52,10 @@ In order to deploy Custodial Smart Contract do the following:
    the following: `Deployed at ... (tx: ...)`,
    which means that your contract was deployed (message shows address of the
    contract and hash of the transaction the contract was deployed by)
+   
+   
+   --
+**Author:** Mikhail Vladimirov <mikhail.vladimirov@gmail.com>
+
+Copyright © 2017 by ABDK Consulting.
+
