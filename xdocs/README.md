@@ -54,7 +54,8 @@ In order to deploy Custodial Smart Contract do the following:
    contract and hash of the transaction the contract was deployed by)
    
    
-   --
+
+----
 **Author:** Mikhail Vladimirov <mikhail.vladimirov@gmail.com>
 
 Copyright © 2017 by ABDK Consulting.
