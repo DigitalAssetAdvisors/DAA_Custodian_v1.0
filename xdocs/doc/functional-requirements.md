@@ -1,16 +1,15 @@
 # Custodial Smart Contract: Functional Requirements
 
 This document describes functional requirements for Custodial Smart Contract.
-Copyright © 2017 by ABDK Consulting.
 
-**Author:** Mikhail Vladimirov <mikhail.vladimirov@gmail.com\>
+
 
 ## 1. Introduction
 
 Custodial Smart Contract is an Ethereum smart contract that represents an agreement between two sides known as "client" and "advisor".
-Custodial Smart Contract keeps client's ether known as "client's capital" or simply "capital" and charges a fee for its service.
-Client's capital is continuously being decreased by the charged fee according to the following formula: `capital (t + 1 second) = capital (t) * fee_factor`, where `fee_factor` is a non-negative number less than 1.0.
-All the charged fee belongs to advisor.
+The Custodial Smart Contract holds client's ether known as "client's capital" or simply "capital" and charges a management fee on behalf of the advisor.
+Client's capital is continuously being decreased by the management fee according to the following formula: `capital (t + 1 second) = capital (t) * fee_factor`, where `fee_factor` is a non-negative number less than 1.0.
+The assessed management fee belongs to advisor.
 
 ## 2. Use Cases
 
@@ -125,7 +124,7 @@ All the charged fee belongs to advisor.
 
 **Actors**: *User*, *Smart Contract*
 
-**Goal**: *User* wants to withdraw the whole client's capital
+**Goal**: *User* wants to withdraw the client's entire capital
 
 #### Main Flow:
 
@@ -164,7 +163,7 @@ All the charged fee belongs to advisor.
 
 **Actors**: *User*, *Smart Contract*
 
-**Goal**: *User* wants to withdraw all charged fee as well as all unaccounted ether from *Smart Contract* (unaccounted ether is all ether that came to the balance of *Smart Contract* without executing any code of *Smart Contract*)
+**Goal**: *User* wants to withdraw the accrued management fee as well as all unaccounted ether from *Smart Contract* (unaccounted ether is all ether that came to the balance of *Smart Contract* without executing any code of *Smart Contract*)
 
 #### Main Flow:
 
@@ -241,3 +240,10 @@ The following limits are established:
 Limit                                  | Value
 -------------------------------------- | -----------
 Maximum allowed client's capital value | 2^128-1 Wei
+
+
+
+----
+**Author:** Mikhail Vladimirov <mikhail.vladimirov@gmail.com\>
+
+Copyright © 2017 by ABDK Consulting.
