@@ -3,8 +3,6 @@
 This smart contract holds ETH funds on the client's behalf, calculates and  
 administers management fee on advisor's behalf
 
-**Author:** Mikhail Vladimirov <mikhail.vladimirov@gmail.com>
-Copyright © 2017 by ABDK Consulting.
 
 ## How to Build ##
 
@@ -30,3 +28,10 @@ To build Custodial Smart Contract, do the following:
 ## How to Run Tests ##
 
 After successful build you may want to run tests via `ant test` command.
+
+
+
+
+**Author:** Mikhail Vladimirov <mikhail.vladimirov@gmail.com>
+
+Copyright © 2017 by ABDK Consulting.
