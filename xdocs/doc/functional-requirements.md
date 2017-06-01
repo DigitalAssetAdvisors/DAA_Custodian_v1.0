@@ -8,7 +8,7 @@ This document describes functional requirements for Custodial Smart Contract.
 
 Custodial Smart Contract is an Ethereum smart contract that represents an agreement between two sides known as "client" and "advisor".
 The Custodial Smart Contract holds client's ether known as "client's capital" or simply "capital" and charges a management fee on behalf of the advisor.
-Client's capital is continuously being decreased by the management fee according to the following formula: `capital (t + 1 second) = capital (t) * fee_factor`, where `fee_factor` is a non-negative number less than 1.0.
+Client's capital is continuously being decreased by the management fee according to the following formula: `capital (t + 1 second) = capital (t) * fee_factor`, where `fee_factor` is a non-negative number less than or equal to 1.0.
 The assessed management fee belongs to advisor.
 
 ## 2. Use Cases
